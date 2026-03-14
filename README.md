@@ -40,7 +40,14 @@ Hardware – PCs, Cyclone II , USB flasher
 Developed by:B.SAM JOEL JOSHUA
 RegisterNumber:212225230242
 ```
-
+```
+module EXP2(a,b,c,d,w,x,y,z,f1,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+assign f1 = ~b&~d | a&b&~c | ~a&b&d;
+assign f2 = ~y&z | x&y | w&y;
+endmodule
+```
 
 **RTL realization**
 <img width="1919" height="1078" alt="Screenshot 2026-03-11 224132" src="https://github.com/user-attachments/assets/f9a03ea4-b6ec-4a71-a21b-e43641a8bad1" />
